@@ -1,0 +1,90 @@
+// .app_header {
+// }
+
+.app_side_nav {
+  height: calc(100vh - 70px);
+  // min-width: 200px !important;
+
+  & > .app_sidebar {
+    height: 100%;
+    max-height: 100%;
+    overflow-y: scroll;
+    background-color: #fff;
+  }
+}
+
+.app_content_view {
+  height: calc(100vh - 70px);
+  max-height: calc(100vh - 70px);
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.05);
+
+  & > .app_page_content {
+    width: 100%;
+    padding: 20px 25px;
+  }
+
+  // & > .app_footer {
+  // }
+}
+
+// scrollbar start
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ea5b88;
+
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #979696;
+  background: #f9004d;
+}
+
+// scrollbar end
+
+// // scrollbar start in class
+
+// /* width */
+// .class{
+//   &::-webkit-scrollbar {
+//     width: 7px !important;
+//     height: 7px !important;
+//   }
+
+//   /* Track */
+//   &::-webkit-scrollbar-track {
+//     background: #f1f1f1;
+//   }
+
+//   /* Handle */
+//   &::-webkit-scrollbar-thumb {
+//     background: #ea5b88;
+
+//     border-radius: 10px;
+//   }
+
+//   /* Handle on hover */
+//   &::-webkit-scrollbar-thumb:hover {
+//     background: #979696;
+//     background: #f9004d;
+//   }
+// }
+
+// // scrollbar end
